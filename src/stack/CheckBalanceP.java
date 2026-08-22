@@ -8,6 +8,7 @@ public class CheckBalanceP {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		Stack<Character> stack = new Stack<Character>();
+		//string for storing parentheses
 		String string = sc.nextLine();
 		for(char ch: string.toCharArray()) {
 			if(ch == '(' || ch == '{' || ch == '[') {
