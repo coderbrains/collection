@@ -62,6 +62,18 @@ public class ReverseStack<E>{
 		size = top+1;
 	}
 	
+	public void reverseStackUsingTwoPointer() {
+		int left = 0;
+		int right = top;
+		while(left < right) {
+			E leftData = stack[left];
+			stack[left]  = stack[right];
+			stack[right] = leftData;
+			left++;
+			right--;
+		}
+	}
+	
 	
 	public static void main(String[] a) {
 		ReverseStack<Integer> reverse = new ReverseStack<Integer>();
@@ -71,6 +83,8 @@ public class ReverseStack<E>{
 		reverse.push(40);
 		
 		reverse.reverseStack();
+		
+		reverse.reverseStackUsingTwoPointer();
 		
 		System.out.println(reverse.pop());
 		System.out.println(reverse.pop());
