@@ -22,6 +22,7 @@ public class MinStackProblem {
 		}
 	}
 	
+	
 	public int peek() {
 		if(!stack.isEmpty()) {
 			return stack.peek();
