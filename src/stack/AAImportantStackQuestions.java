@@ -3,7 +3,6 @@ package stack;
 public class AAImportantStackQuestions {
 	
 	/**
-
 		### 🟢 Level 1 — Basic Stack
 
 		1. Implement Stack using Array

@@ -9,7 +9,7 @@ public class NextGreaterUsingStack {
 		
 		for(int i = nos.length - 1; i >= 0; i--) {
 			
-				while(!stack.isEmpty() && nos[i] > stack.peek()) {
+				while(!stack.isEmpty() && nos[i] >= stack.peek()) {
 					stack.pop();
 				}
 				
@@ -24,7 +24,7 @@ public class NextGreaterUsingStack {
 	}
 	
 	public static void main(String[] args) {
-		int[] a = {4, 5, 2, 10, 8};
+		int[] a = {4, 5, 2, 10, 8, 21};
 		int[] b = new int[a.length];
 		findNextGreater(a, b);
 		
